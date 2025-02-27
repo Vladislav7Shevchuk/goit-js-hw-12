@@ -63,21 +63,35 @@ ul.gallery {
   font-size: 14px;
 }
 
-.loader-box,
-.loader-box-down {
-  margin-block: 48px;
-  text-align: center;
+.loader-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  font-size: 16px;
+  color: #000000;
 }
 
-.hidden {
-  display: none;
+.loader-box-down {
+  position: absolute;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .load-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 20px;
+  position: relative;
+  height: 50px;
 }
 
 .load {
@@ -88,4 +102,8 @@ ul.gallery {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
